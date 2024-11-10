@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity=
+    "sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> 
+             <img src="P.png" class="logo">
+             <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+             </ul>
+             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack web Developer</p>
+                <h1>hi,I'm <span>Raushan Kumar</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+<!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="raushan.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello there! 👋 I'm Raushan Kumar, a dedicated and creative Web Developer with a strong foundation in Data Structures and Algorithms.<br>
+                        Skillful in C , C++ ,JAVA And Data Structure With Hands on Experience on Web Development Tools.<br>
+                        Enthusiastic about the basics of machine learning, with foundational knowledge in data preprocessing, model selection, and evaluation. Eager to apply ML concepts to solve real-world problems and continuously learn.<br>
+                        Aspiring For a Challenging Career in Software Development as to Use My Learned Skills and Experience for Best Result.</p>
+                        I Love Nature And Natural Things❤.
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>c++,Java,Python,Node.js,javascript </li>
+                            <li><span>Databases:</span><br>MySQL, MongoDB</li>
+                            <li><span>Frameworks:</span><br> Spring Boot, Django, Express.js,bootstrap</li>
+                            <li><span>APIs:</span><br>  RESTful APIs, GraphQL</li>
+                            <li><span>Version Control: </span><br> Git, GitHub</li>
+                            <li><span>Library: </span><br> Numpy,pandas,matplotlib,sklearn,seaborn.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023 - current</span><br>Front-end And Back-end At self Company</li>
+                            <li><span>2023 SIH</span><br>Team Lead</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022-Current </span><br>Web Dev from Apna college</li>
+                            <li><span>2022-2026</span><br>B.Tech from GEC Aurangabad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------- services -------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-connectdevelop"></i> 
+                <h2>MERN STACK Development</h2>
+                <p></p>"Building responsive, dynamic web applications with the MERN stack allows me to create solutions that are not only robust but also scalable and maintainable. My portfolio showcases how I leverage the flexibility of MongoDB for data management, the power of Express.js and Node.js for server-side logic, and the interactivity of React.js for creating intuitive user interfaces. Each project is a demonstration of my commitment to modern web development practices, with an emphasis on performance, security, and user-centered design."
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Python Development</h2>
+                <p>"The heart of Python development lies in creating elegant, efficient, and scalable solutions to everyday challenges. My portfolio is a reflection of my journey—each project is a step toward mastery, blending coding expertise with an understanding of the needs of users and businesses alike. From automation scripts to full-stack applications, I focus on writing clean, maintainable code, integrating best practices, and constantly evolving with the latest tools and technologies."</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Machine Learning</h2>
+                <p>I am a passionate Machine Learning (ML) developer with a deep understanding of algorithms, data processing, and model deployment. I thrive on solving complex problems using data-driven approaches and continuously learning to stay at the forefront of technology.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------  portfolio----------- -->
+<!-- <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/1.png">
+                <div class="layer">
+                   <h3>spotify-music-player</h3>
+                   <P>A Spotify Clone is a music streaming platform designed to replicate the features and functionalities of the popular music service, Spotify</P>
+                   <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="images/3.png">
+                <div class="layer">
+                    <h3>ipl_score_predection</h3>
+                    <P>IPL is game where the result can be changed in just few seconds so to predict the winner ML algorithms like SVM, Logistic Regression, Naïve Bayes, Decision Tree and KNN.</P>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                 </div>
+            </div>
+            <div class="work">
+                <img src="images/2.png">
+                <div class="layer">
+                    <h3>Amazone Clone</h3>
+                    <P>provides a multi-vendor eCommerce marketplace via which the vendors and the users can communicate and sell/buy products.provides a multi-vendor eCommerce marketplace via which the vendors and the users can communicate and sell/buy products.
+                    </P>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                 </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See More</a>
+    </div>
+</div> -->
+
+
+<!-- ----------------------contact--------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>raushankumarv1512@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8603062196</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100025425151480"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/RaushanKum46547?t=v7vyZLd9A5m26qnCRoVoMA&s=09"> <i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/official_raushan55?igsh=MXB3eGNlN2cyZjczMg=="><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://www.linkedin.com/in/raushan-kumar-9662ba2aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <a href=" " download class="btn btn2">Download CV</a>
+                <!-- yaha pe href ke ander cv ka url daal denge. -->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name " placeholder="your name" required>
+                    <input type="email" name="Email " placeholder="your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Raushan Kumar.<br>Made With<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classList.add(active-tab);
+        }
+    </script>
+
+
+<script>
+  var sidemeu = document.getElementById("sidemenu")
+
+  function openmenu(){
+  sidemeu.style.right ="0";
+  }
+  function closemenu(){
+  sidemeu.style.right ="-200px";
+  }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxZxE0ZDvO0f8mkGchqEXD0ERX_BSgHm4bnJRmn6sli0hKTqKERK9pcP4dO3dAwWXmY/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },100)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
